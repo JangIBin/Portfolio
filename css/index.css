@@ -27,11 +27,29 @@
 	}
 
 	body {
-		background-color: #935d8c;
-		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #DFF6FF 15%, #1363DF 85%);
-		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #DFF6FF 15%, #1363DF 85%);
-		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #DFF6FF 15%, #1363DF 85%);
-		background-image: url("images/overlay.png"), linear-gradient(45deg, #DFF6FF 15%, #1363DF 85%);
+		background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+		background-size: 400% 400%;
+		animation: AnimationName 15s ease infinite;
+	}
+	@-webkit-keyframes AnimationName {
+		0%{background-position:0% 50%}
+		50%{background-position:100% 50%}
+		100%{background-position:0% 50%}
+	}
+	@-moz-keyframes AnimationName {
+		0%{background-position:0% 50%}
+		50%{background-position:100% 50%}
+		100%{background-position:0% 50%}
+	}
+	@-o-keyframes AnimationName {
+		0%{background-position:0% 50%}
+		50%{background-position:100% 50%}
+		100%{background-position:0% 50%}
+	}
+	@keyframes AnimationName { 
+		0%{background-position:0% 50%}
+		50%{background-position:100% 50%}
+		100%{background-position:0% 50%}
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
